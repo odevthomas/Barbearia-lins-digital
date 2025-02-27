@@ -2,65 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, Package } from "lucide-react";
 
-const products = [
-  {
-    id: "1",
-    name: "Óleo de Barbearia Premium",
-    price: 29.99,
-    image: "https://images.unsplash.com/photo-1621607512022-6aecc4fed814",
-    description: "Óleo luxuoso para barba, ideal para o homem moderno. Nutre e condiciona sua barba, proporcionando um brilho saudável.",
-    inStock: true,
-  },
-  {
-    id: "2",
-    name: "Cera Modeladora",
-    price: 24.99,
-    image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70",
-    description: "Cera de alta fixação para um estilo duradouro e natural.",
-    inStock: true,
-  },
-  {
-    id: "3",
-    name: "Shampoo para Barba",
-    price: 19.99,
-    image: "https://images.unsplash.com/photo-1607014822390-8fba9f34b5e3",
-    description: "Shampoo suave que limpa e hidrata a barba.",
-    inStock: true,
-  },
-  {
-    id: "4",
-    name: "Balm Hidratante para Barba",
-    price: 34.99,
-    image: "https://images.unsplash.com/photo-1586346342275-7b8a48ff7c8e",
-    description: "Balm que suaviza e hidrata, mantenha sua barba saudável.",
-    inStock: false,
-  },
-  {
-    id: "5",
-    name: "Pente de Madeira",
-    price: 14.99,
-    image: "https://images.unsplash.com/photo-1568618582526-e0c0c0a7c3c7",
-    description: "Pente de madeira artesanal, perfeito para a barba.",
-    inStock: true,
-  },
-  {
-    id: "6",
-    name: "Kit de Barba Completo",
-    price: 99.99,
-    image: "https://images.unsplash.com/photo-1621607512022-6aecc4fed814",
-    description: "Inclui óleo, shampoo e balm para cuidados completos.",
-    inStock: true,
-  },
-];
-
 const ProductCard = ({
-  id,
-  name,
-  price,
-  image,
-  description,
-  inStock,
-  onAddToCart,
+  id = "1",
+  name = "Óleo de Barbearia Premium",
+  price = 29.99,
+  image = "https://images.unsplash.com/photo-1621607512022-6aecc4fed814",
+  description = "Óleo luxuoso para barba, ideal para o homem moderno. Nutre e condiciona sua barba, proporcionando um brilho saudável.",
+  inStock = true,
+  onAddToCart = () => console.log("Adicionar ao carrinho clicado"),
 }) => {
   return (
     <motion.div
@@ -96,8 +45,12 @@ const ProductCard = ({
       <div className="p-6 space-y-4">
         {/* Informações do Produto */}
         <div className="space-y-2">
-          <h3 className="text-xl font-bold text-white tracking-tight">{name}</h3>
-          <p className="text-gray-400 text-sm line-clamp-2">{description}</p>
+          <h3 className="text-xl font-bold text-white tracking-tight">
+            {name}
+          </h3>
+          <p className="text-gray-400 text-sm line-clamp-2">
+            {description}
+          </p>
         </div>
 
         {/* Preço e Ação */}
@@ -131,18 +84,4 @@ const ProductCard = ({
   );
 };
 
-const ProductGallery = () => {
-  const handleAddToCart = (id) => {
-    console.log(`Produto ${id} adicionado ao carrinho.`);
-  };
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {products.map((product) => (
-        <ProductCard key={product.id} {...product} onAddToCart={handleAddToCart} />
-      ))}
-    </div>
-  );
-};
-
-export default ProductGallery;
+export default ProductCard;

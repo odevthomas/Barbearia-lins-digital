@@ -20,42 +20,42 @@ const defaultStyles: Style[] = [
     id: "1",
     name: "Degradê Clássico",
     image:
-      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Degradê Clássico.jpeg",
     description: "Corte degradê clean e atemporal com estilo preciso.",
   },
   {
     id: "2",
     name: "Pompadour Moderno",
     image:
-      "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Pompadour Moderno.jpeg",
     description: "Interpretação contemporânea do clássico pompadour.",
   },
   {
     id: "3",
     name: "Corte Texturizado",
     image:
-      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Corte Texturizado.jpeg",
     description: "Corte texturizado moderno com movimento natural.",
   },
   {
     id: "4",
     name: "Modelagem de Barba",
     image:
-      "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Modelagem de Barba.jpeg",
     description: "Modelagem e aparo preciso da barba.",
   },
   {
     id: "5",
     name: "Penteado para Trás",
     image:
-      "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Penteado para Trás.jpeg",
     description: "Estilo clássico penteado para trás com um toque moderno.",
   },
   {
     id: "6",
     name: "Barba Feita",
     image:
-      "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&q=80&w=600&h=600",
+      "/cortes/Barba Feita.jpeg",
     description: "Experiência tradicional de barbear com lâmina.",
   },
 ];
