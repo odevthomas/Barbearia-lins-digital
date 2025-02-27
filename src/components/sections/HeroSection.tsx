@@ -58,7 +58,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Button
             size="lg"
             onClick={onBookNow}
-            className="bg-gold hover:bg-gold/90 text-black font-bold px-8 py-6 text-lg"
+            className="bg-[#FFD700] hover:bg-[#FFD700] text-white font-bold px-8 py-4 text-lg transition-shadow duration-300 shadow-lg hover:shadow-xl rounded-lg"
           >
             Agendar Agora
           </Button>
@@ -66,7 +66,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             size="lg"
             variant="outline"
             onClick={onLearnMore}
-            className="border-gold text-gold hover:bg-gold hover:text-black font-bold px-8 py-6 text-lg"
+            className="border-yellow-500 hover:bg-[#FFD700] text-yellow-500 hover:text-white font-bold px-8 py-4 text-lg transition-shadow duration-300 shadow-lg hover:shadow-xl rounded-lg"
           >
             Saiba Mais
           </Button>

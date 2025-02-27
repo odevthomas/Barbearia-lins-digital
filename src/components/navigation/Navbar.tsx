@@ -28,7 +28,7 @@ const Navbar = ({
       <div className="container mx-auto h-full px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Scissors className="h-8 w-8 text-gold" />
+          <Scissors className="h-8 w-8 text-gold " />
           <span className="text-2xl font-bold text-white">Barbearia Lins</span>
         </div>
 
@@ -44,26 +44,26 @@ const Navbar = ({
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-white hover:text-gold">
+              <NavigationMenuTrigger className="text-black hover:text-gold">
                 Produtos
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="w-[400px] p-4 bg-zinc-900 border border-zinc-800 rounded-lg">
+                <div className="w-[400px] p-4 bg-black border border-black rounded-lg text-white ">
                   <div className="grid gap-3">
                     <NavigationMenuLink
-                      className="block p-2 hover:bg-zinc-800 rounded-md"
+                      className="block p-2 hover:bg-black rounded-md"
                       href="#grooming"
                     >
                       Produtos para Barba
                     </NavigationMenuLink>
                     <NavigationMenuLink
-                      className="block p-2 hover:bg-zinc-800 rounded-md"
+                      className="block p-2 hover:bg-black rounded-md"
                       href="#accessories"
                     >
                       Acessórios
                     </NavigationMenuLink>
                     <NavigationMenuLink
-                      className="block p-2 hover:bg-zinc-800 rounded-md"
+                      className="block p-2 hover:bg-black rounded-md"
                       href="#gift-cards"
                     >
                       Vale Presente

@@ -21,42 +21,42 @@ const defaultStyles: Style[] = [
     name: "Degradê Clássico",
     image:
       "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Clean and timeless fade haircut with precision styling",
+    description: "Corte degradê clean e atemporal com estilo preciso.",
   },
   {
     id: "2",
     name: "Pompadour Moderno",
     image:
       "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Contemporary take on the classic pompadour style",
+    description: "Interpretação contemporânea do clássico pompadour.",
   },
   {
     id: "3",
     name: "Corte Texturizado",
     image:
       "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Modern textured crop with natural movement",
+    description: "Corte texturizado moderno com movimento natural.",
   },
   {
     id: "4",
     name: "Modelagem de Barba",
     image:
       "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Precision beard trimming and shaping",
+    description: "Modelagem e aparo preciso da barba.",
   },
   {
     id: "5",
     name: "Penteado para Trás",
     image:
       "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Classic slicked back style with modern edge",
+    description: "Estilo clássico penteado para trás com um toque moderno.",
   },
   {
     id: "6",
     name: "Barba Feita",
     image:
       "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&q=80&w=600&h=600",
-    description: "Traditional straight razor shave experience",
+    description: "Experiência tradicional de barbear com lâmina.",
   },
 ];
 
@@ -66,14 +66,14 @@ const StylesGallery: React.FC<StylesGalleryProps> = ({
   return (
     <div className="w-full bg-black py-12 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gold mb-8 text-center">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">
           Nossos Estilos Exclusivos
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {styles.map((style) => (
             <Dialog key={style.id}>
               <DialogTrigger asChild>
-                <Card className="overflow-hidden cursor-pointer hover:border-gold transition-all duration-300 bg-zinc-900 border-zinc-800">
+                <Card className="overflow-hidden cursor-pointer hover:border-white transition-all duration-300 border border-gray-800 bg-black">
                   <AspectRatio ratio={1}>
                     <img
                       src={style.image}
@@ -85,11 +85,11 @@ const StylesGallery: React.FC<StylesGalleryProps> = ({
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {style.name}
                     </h3>
-                    <p className="text-gray-400 text-sm">{style.description}</p>
+                    <p className="text-gray-300 text-sm">{style.description}</p>
                   </div>
                 </Card>
               </DialogTrigger>
-              <DialogContent className="bg-zinc-900 border-zinc-800 max-w-2xl">
+              <DialogContent className="bg-black border border-gray-800 max-w-2xl">
                 <ScrollArea className="max-h-[80vh]">
                   <div className="p-6">
                     <AspectRatio ratio={1}>
@@ -102,7 +102,7 @@ const StylesGallery: React.FC<StylesGalleryProps> = ({
                     <h2 className="text-2xl font-bold text-white mt-6 mb-4">
                       {style.name}
                     </h2>
-                    <p className="text-gray-400">{style.description}</p>
+                    <p className="text-gray-300">{style.description}</p>
                   </div>
                 </ScrollArea>
               </DialogContent>
