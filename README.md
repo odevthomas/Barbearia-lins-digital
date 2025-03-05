@@ -1,5 +1,6 @@
-# Barbearia Lins
 ![Home (2)](https://github.com/user-attachments/assets/7c0aacd3-0ebc-4fff-af5b-8467ece27efb)
+# Barbearia Lins
+
 
 **Experiência Premium em Barbearia**  
 Onde estilo encontra tradição no coração do cuidado masculino moderno.
